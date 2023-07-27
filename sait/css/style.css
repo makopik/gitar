@@ -586,8 +586,10 @@ html {
 
 .second_section {
   min-height: 800px;
+  overflow: hidden;
 }
 .second_section__container {
+  max-width: 1000px;
   padding-top: 58px;
   position: relative;
 }
@@ -596,6 +598,7 @@ html {
 }
 .second_section__card-box {
   display: inline-flex;
+  justify-content: center;
   margin-bottom: 88px;
 }
 .second_section__card-item {
@@ -721,6 +724,9 @@ html {
   bottom: 75px;
 }
 
+.footer {
+  overflow: hidden;
+}
 .footer_img {
   position: absolute;
   left: -360px;
@@ -734,4 +740,25 @@ html {
 }
 .footer__title {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
