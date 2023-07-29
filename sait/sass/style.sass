@@ -103,7 +103,7 @@ $color-grey:#B8B8B8
         position: absolute
         top: 190px
         left: 90px    
-        width: 540.606px
+        width: 540px
         height: 220px
         border-radius: 100px
         background: $color-grey
@@ -238,9 +238,9 @@ $color-grey:#B8B8B8
     display: flex
     align-items: flex-end
     &_img
-        display: flex
-        align-content: center
-        height: 358.059px
+        position: absolute
+        right: 100px
+        height: 358px
     &_text
         width: 280px
         font-size: 32px
@@ -255,6 +255,8 @@ $color-grey:#B8B8B8
     background: $color-orang
 .cards-item__grey
     background: $color-grey
+.cards-item__blue
+    background: $color-blue
 
 
 
@@ -279,7 +281,7 @@ $color-grey:#B8B8B8
 .therty_section
     position: relative
     min-height: 800px 
-    background: $color-grey
+    background:#A4A4A4
     overflow: hidden
     z-index: 0
     &__container
@@ -299,13 +301,15 @@ $color-grey:#B8B8B8
         margin-bottom: 30px
     &__first-elipse
         position: absolute
-        top: 196px
-        left: 110px
+        top: 112px
+        left: 28px
+
         z-index: -1
     &__img
         position: absolute
-        top: 324px
-        right: 925px
+        top: 313px
+        right: 905px
+        width: 300px
         z-index: -1
     &__second-elipse
         position: absolute
@@ -317,32 +321,415 @@ $color-grey:#B8B8B8
     bottom: 75px
 
 .footer
-    overflow: hidden
     &_img
         position: absolute
         left: -360px
         bottom: 0px
+        
     &__container
         min-height: 420px
         display: flex
         align-items: center
         justify-content: flex-end
+    
     &__title
         margin-bottom: 20px
 
 
+
+/* АДАПТИВНЫЙ ДИЗАЙН */
+
+
+
+
+
+
+
+
+/* Планшет или малый комп */
 @media (max-width: 1199px)
     .container
         width: 960px
+    .main_section
+        min-height:700px   
+        &__first-elipse
+            right:  -50px
+            top: 130px
+ 
+        &__secend-elipse
+            right: -89px
+            top: 585px
+            
+      
+    .left-wrapper
 
+        img
+            width: 750px
+    
+        &_rectan-blue
+            width: 456px
+            height: 162px
+        &_rectan-orang
+            width: 539px
+            height: 165px
+        &_rectan-grey
+            width: 435px
+            height: 156px
+    .right-wrapper 
+        right: -45px
+    .buttons
+        &__main-btn
+            width: 200px
+            height: 60px
+
+    .elipse
+
+         &_dig
+            width: 200px
+            height: 200px
+         &__subtract
+            width: 129px
+            height: 129px
+ 
+
+
+
+
+    .second_section
+        min-height:700px         
+        &__title
+        margin-bottom:  68px
+        &__card-box
+            display: inline-flex
+            justify-content: center
+            margin-bottom: 58px
+        &__card-item 
+            margin-right: 44px
+            &:last-child
+                margin-right: 0px
+        &_icons-box
+            display: flex
+            justify-content: space-evenly
+        &_icons-item
+            &:last-child
+                margin-right: 0px
+        &__first-elipse
+            top: 120px
+        &__second-elipse       
+            top: 410px
+
+        .cards-item
+            width: 290px
+            height: 346px
+            &_img
+                height: 300px
+                display: flex
+                justify-content: center
+            &_text
+                width: 280px
+                font-size: 32px
+                text-align: center
+                color: #ffff
+                transform: rotate(90deg)
+                position: absolute
+                top: 148px
+                right: -100px
+                font-weight: bold
+        .cards-item__orange
+            background: $color-orang
+        .cards-item__grey
+            background: $color-grey
+
+
+
+
+    .icons-item
+        display: inline-flex
+        align-items: center
+        &_img
+            margin-right: 15px
+            width: 63px
+        &_text
+            font-size:  18px
+            span
+                font-size: 38px
+                font-weight: bold
+
+
+
+
+    
+    .therty_section
+        position: relative
+        min-height: 750px 
+        background:#A4A4A4
+        overflow: hidden
+        z-index: 0
+        &__container
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center     
+            padding-left:40px
+            padding-top: 15px
+            
+        &__right-wraper
+            max-width: 480px   
+
+        &__right-title
+            margin-bottom: 0px
+        &__right-text
+            font-size: 18px
+            margin-bottom: 20px
+        &__first-elipse
+            position: absolute
+            top: 205px
+            left: 61px
+
+            z-index: -1
+        &__img
+            position: absolute
+            top: 279px
+            right: 753px
+            z-index: -1
+        &__second-elipse
+            position: absolute
+            right: -120px
+            top: -120px
+     
+
+
+    .title__hr_top
+        bottom: 75px
+
+   
+
+
+
+    /* Вертикальный плвншет */
 @media (max-width: 991px)
     .container
         width: 720px
+    .main_section
+        min-height: 600px   
+        &__first-elipse
+            right: -60px
+            top: 65px  
+ 
+        &__secend-elipse
+            right: -52px
+            top: 518px
+    .left-wrapper
+        position: relative
+        img
+            width: 600px
+        &_rectan-blue
+           
+            top: 113px
+            left: -31px
+            width: 375px
+            height: 127px
+         
+        &_rectan-orang
+          
+            top: 122px
+            left: -8px
+            width: 403px
+            height: 127px
+         
+        &_rectan-grey
+           
+            top: 147px
+            left: 53px 
+            width: 390px
+            height: 127px
+       
+    .right-wrapper
+        width: 361px
+        position: absolute
+        top: 72px
+        right: -98px
+        z-index: 5
 
+        &__icons-box
+            margin-bottom: 1px
+            padding-left: 10px
+        &__title
+            
+            margin-bottom:  10px
+        &__text
+            font-size: 18px
+            margin-bottom: 20px
+    .icons
+        display: flex
+        flex-direction: row
+        &__item  
+            display: flex
+            justify-content: center
+            align-items: center
+          
+            border: 1px solid $color-blue
+            border-radius: 100px 
+            margin-right: 17px
+            &:last-child
+                margin-right: 0px
+            i
+                font-size: 25px
+    .title
+        font-size: 58px
+        position: relative
+        font-weight: bold
+        &__hr
+            width: 45px
+            position: absolute
+            bottom: 0px
+            margin: 0px
+            border: none
+            border-top: 0.5px solid black
+
+
+
+    .second_section
+        min-height:600px         
+        &__title
+            margin-bottom:  28px
+        &__card-box
+            margin-bottom: 50px
+        &__card-item 
+            margin-right: 44px
+
+        &__first-elipse
+            top: 80px
+        &__second-elipse       
+            top: 340px
+
+        .cards-item
+            width: 210px
+            height: 280px
+            
+            &_img
+                height: 240px
+                display: flex
+                justify-content: center
+                right: 58px
+            &_text
+                width: 260px
+                font-size: 25px
+       
+
+
+
+    .icons-item
+        display: inline-flex
+        align-items: center
+        &_img
+            margin-right: 15px
+            width: 53px
+        &_text
+            font-size:  16px
+            span
+                font-size: 28px
+                font-weight: bold
+
+
+
+
+    
+    .therty_section
+        min-height: 650px 
+    
+        &__container
+            
+        &__left-wraper
+            margin-right: 30px
+        &__right-wraper
+            max-width: 480px   
+
+        &__right-title
+            margin-bottom: 0px
+        &__right-text
+            font-size: 16px
+            margin-bottom: 18px
+        &__first-elipse
+            position: absolute
+            top: 80px
+            left: -6px
+          
+            z-index: -1
+        &__img
+            width: 270px
+            top: 237px
+            right: 534px
+       
+        &__second-elipse
+            
+            right: -105px
+            top: -123px
+     
+
+
+    .title__hr_top
+        bottom: 59px
+
+    .buttons
+        display: inline-flex
+        &__main-btn
+            border: none
+            margin-right: 15px
+            width: 185px
+            height: 48px
+            border-radius: 100px
+            background: $color-orang
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+            font-weight: bold
+        &__icon-btn
+            display: inline-flex
+            align-items: center
+
+            img
+                width: 46px
+                margin-right: 12px
+        &__text
+            font-size: 18px
+    .elipse
+        width:  145px
+        height: 145px
+   
+        &_dig
+            width: 247px
+            height: 247px
+        &__subtract
+            width: 173px
+            height: 168px
+    .footer
+        &_img
+            position: absolute
+            left: -360px
+            bottom: -100px
+    
+        &__container
+            min-height: 320px
+            display: flex
+            align-items: center
+            justify-content: flex-end
+        
+        &__title
+            font-size: 48px
+            margin-bottom: 20px
+    .title
+        &__hr_top
+                bottom: 50px
+
+
+
+
+    /* горизонт телефон */
 @media (max-width: 767px)
     .container
         width: 540px
 
+
+/* вертикал телефон */
 @media (max-width: 575px)
     .container
         width: 100%
